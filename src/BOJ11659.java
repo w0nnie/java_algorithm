@@ -10,13 +10,13 @@ public class BOJ11659 {
 
         StringTokenizer stk = new StringTokenizer(br.readLine());
 
-        int n = Integer.parseInt(stk.nextToken());
+        int n = Integer.parseInt(stk.nextToken()); // 배열의 갯수
         int m = Integer.parseInt(stk.nextToken()); // 질의갯수
 
         long s[] = new long[n+1];
         stk = new StringTokenizer(br.readLine());
         for ( int i = 1; i <= n; i ++){
-            s[i] = s[i - 1] + Integer.parseInt(stk.nextToken());
+            s[i] = s[i - 1] + Integer.parseInt(stk.nextToken()); //배열의 합
         }
         for (int q = 0; q < m; q++){
             stk = new StringTokenizer(br.readLine());
